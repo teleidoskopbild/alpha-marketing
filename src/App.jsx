@@ -48,9 +48,73 @@ function App() {
         <div className="box"></div>
         <TypingEffect />
       </div>
-      <div className="h-screen bg-orange-500 flex items-center justify-center">
-        <motion.h2 className="text-white text-4xl font-bold">Page 2</motion.h2>
+
+      <div className="h-screen bg-black-500 flex flex-col items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: [1, 1, 1, 1, 1, 1, 1, 1, 1] }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          className="mt-4 text-white text-4xl font-bold w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
+        >
+          OUR VALUES
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: [0, 1, 1, 1, 1, 1, 1, 1, 0, 0] }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          className="mt-4 text-white text-4xl font-bold w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
+        >
+          Innovate
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: [0, 0, 1, 1, 1, 1, 1, 0, 0, 0] }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          className="mt-4 text-white text-4xl font-bold w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
+        >
+          Create
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: [0, 0, 0, 1, 1, 1, 0, 0, 0, 0] }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          className="mt-4 text-white text-4xl font-bold w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
+        >
+          Transform
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: [0, 0, 0, 0, 1, 0, 0, 0, 0, 0] }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          className="mt-4 text-white text-4xl font-bold w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
+        >
+          Thrive
+        </motion.div>
       </div>
+
       <div className="h-screen bg-green-500 flex items-center justify-center">
         <motion.h2 className="text-white text-4xl font-bold">Page 3</motion.h2>
       </div>
