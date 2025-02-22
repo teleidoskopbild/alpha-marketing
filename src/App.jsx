@@ -58,7 +58,7 @@ function App() {
             repeat: Infinity,
             repeatType: "loop",
           }}
-          className="mt-4 text-white text-4xl font-bold w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
+          className="mt-4 text-white text-2xl sm:text-4xl font-bold w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
         >
           OUR VALUES
         </motion.div>
@@ -70,7 +70,7 @@ function App() {
             repeat: Infinity,
             repeatType: "loop",
           }}
-          className="mt-4 text-white text-4xl font-bold w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
+          className="mt-4 text-white text-2xl sm:text-4xl font-bold w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
         >
           Innovate
         </motion.div>
@@ -83,7 +83,7 @@ function App() {
             repeat: Infinity,
             repeatType: "loop",
           }}
-          className="mt-4 text-white text-4xl font-bold w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
+          className="mt-4 text-white text-2xl sm:text-4xl font-bold w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
         >
           Create
         </motion.div>
@@ -96,7 +96,7 @@ function App() {
             repeat: Infinity,
             repeatType: "loop",
           }}
-          className="mt-4 text-white text-4xl font-bold w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
+          className="mt-4 text-white text-2xl sm:text-4xl font-bold w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
         >
           Transform
         </motion.div>
@@ -109,7 +109,7 @@ function App() {
             repeat: Infinity,
             repeatType: "loop",
           }}
-          className="mt-4 text-white text-4xl font-bold w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
+          className="mt-4 text-white text-3xl sm:text-4xl font-bold w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4 border-4 border-white mx-auto text-center bg-transparent"
         >
           Thrive
         </motion.div>
