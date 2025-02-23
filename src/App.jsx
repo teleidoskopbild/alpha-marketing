@@ -121,25 +121,39 @@ function App() {
           OUR LOCATIONS
         </h2>
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-8 items-center">
-          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-72 text-center border-2 border-white">
+          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-72 text-center border-3 border-white">
             <h3 className="text-xl font-bold">New York</h3>
             <p className="mt-2 text-sm">123 5th Ave, New York, NY 10010, USA</p>
           </div>
-          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-72 text-center border-2 border-white">
+          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-72 text-center border-3 border-white">
             <h3 className="text-xl font-bold">Barcelona</h3>
             <p className="mt-2 text-sm">Av. Diagonal, 08008 Barcelona, Spain</p>
           </div>
-          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-72 text-center border-2 border-white">
+          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-72 text-center border-3 border-white">
             <h3 className="text-xl font-bold">Tokyo</h3>
             <p className="mt-2 text-sm">
               1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japan
             </p>
           </div>
         </div>
-        <img className="" src="/scaled_map.svg" alt="Scaled Map" />
+        <img className="-mt-2" src="/scaled_map.svg" alt="Scaled Map" />
       </div>
-      <div className="h-screen bg--500 flex items-center justify-center">
-        <motion.h2 className="text-white text-4xl font-bold">Page 6</motion.h2>
+      <div className="h-screen bg-black-500 flex items-center justify-center">
+        <motion.button
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          whileHover={{
+            scale: 1.2,
+            backgroundColor: "#ffffff",
+            color: "#000000",
+          }}
+          whileTap={{ scale: 2 }}
+          className="cursor-pointer px-6 py-3 border-2 border-white text-white text-lg"
+          onClick={() => (window.location.href = "mailto:marketing@alpha.com")}
+        >
+          CONTACT US
+        </motion.button>
       </div>
     </>
   );
