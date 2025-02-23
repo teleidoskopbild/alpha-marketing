@@ -26,7 +26,7 @@ function App() {
     const currentPage = Math.floor(window.scrollY / window.innerHeight);
     const nextPage = direction > 0 ? currentPage + 1 : currentPage - 1;
 
-    const totalPages = 6;
+    const totalPages = 5;
     if (nextPage >= 0 && nextPage < totalPages) {
       window.scrollTo({
         top: nextPage * window.innerHeight,
