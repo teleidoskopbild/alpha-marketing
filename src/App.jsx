@@ -149,7 +149,7 @@ function App() {
             </p>
           </div>
         </div>
-        <img className="-mt-2" src="/scaled_map.svg" alt="Scaled Map" />
+        <img className="-mt-2" src="scaled_map.svg" alt="Scaled Map" />
       </div>
       <div className="h-screen mb-0 bg-black-500 flex items-center justify-center">
         <motion.button
