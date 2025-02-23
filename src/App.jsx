@@ -120,6 +120,22 @@ function App() {
         <h2 className="mt-8 text-white text-2xl sm:text-4xl lg:text-6xl font-bold text-center">
           OUR LOCATIONS
         </h2>
+        <div className="mt-8 flex flex-col sm:flex-row justify-center gap-8 items-center">
+          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-72 text-center border-2 border-white">
+            <h3 className="text-xl font-bold">New York</h3>
+            <p className="mt-2 text-sm">123 5th Ave, New York, NY 10010, USA</p>
+          </div>
+          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-72 text-center border-2 border-white">
+            <h3 className="text-xl font-bold">Barcelona</h3>
+            <p className="mt-2 text-sm">Av. Diagonal, 08008 Barcelona, Spain</p>
+          </div>
+          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-72 text-center border-2 border-white">
+            <h3 className="text-xl font-bold">Tokyo</h3>
+            <p className="mt-2 text-sm">
+              1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japan
+            </p>
+          </div>
+        </div>
         <img className="" src="/scaled_map.svg" alt="Scaled Map" />
       </div>
       <div className="h-screen bg--500 flex items-center justify-center">
