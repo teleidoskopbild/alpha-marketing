@@ -25,7 +25,7 @@ body {
   height: 70vh;
   margin: 0 auto;
   background: linear-gradient(to bottom, #00ff00, #005000);
-  background-image: linear-gradient(to right, indigo, violet);
+  background-image: linear-gradient(to bottom, black, white);
   mask-image: radial-gradient(circle at 50% 50%, white 1px, transparent 2px);
   mask-size: 24px 24px; /* Bestimmt die Größe des Musters */
   mask-repeat: repeat; /* Wiederholt das Muster */

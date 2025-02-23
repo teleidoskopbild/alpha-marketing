@@ -113,9 +113,22 @@ function App() {
           Thrive
         </motion.div>
       </div>
-      <div className="h-screen bg-red-500 flex items-center justify-center">
-        <motion.h2 className="text-white text-4xl font-bold">Page 4</motion.h2>
+      <div className="h-screen bg-black-500 flex items-center justify-center">
+        <motion.h2
+          initial={{ opacity: 0.5 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 1.5,
+            ease: "easeOut",
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          className="text-white text-4xl font-bold text-center"
+        >
+          ELEVATE YOUR BRAND WITH <br /> ALPHA MARKETING
+        </motion.h2>
       </div>
+
       <div className=" h-screen w-screen bg-black-600">
         <h2 className="mt-8 text-white text-2xl sm:text-4xl lg:text-6xl font-bold text-center">
           OUR LOCATIONS
@@ -138,7 +151,7 @@ function App() {
         </div>
         <img className="-mt-2" src="/scaled_map.svg" alt="Scaled Map" />
       </div>
-      <div className="h-screen bg-black-500 flex items-center justify-center">
+      <div className="h-screen mb-0 bg-black-500 flex items-center justify-center">
         <motion.button
           initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
