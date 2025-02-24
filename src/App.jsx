@@ -5,7 +5,7 @@ import "./App.css";
 
 const TypingEffect = () => {
   return (
-    <h2 className="page1 flex">
+    <h2 className="brandname flex">
       <Typewriter
         words={["ALPHA", "MARKETING"]}
         loop={Infinity}
@@ -115,7 +115,7 @@ function App() {
       </div>
       <div className="h-screen bg-black-500 flex items-center justify-center">
         <motion.h2
-          initial={{ opacity: 0.5 }}
+          initial={{ opacity: 0.3 }}
           animate={{ opacity: 1 }}
           transition={{
             duration: 1.5,
@@ -134,22 +134,22 @@ function App() {
           OUR LOCATIONS
         </h2>
         <div className="mt-6 flex flex-col lg:flex-row justify-center gap-8 items-center">
-          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-70 text-center border-3 border-white">
+          <div className="mb-5 sm:mb-0 bg-transparent text-white p-5 w-70 text-center border-3 border-white">
             <h3 className="text-xl font-bold">New York</h3>
             <p className="mt-2 text-sm">123 5th Ave, New York, NY 10010, USA</p>
           </div>
-          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-70 text-center border-3 border-white">
+          <div className="mb-5 sm:mb-0 bg-transparent text-white p-5 w-70 text-center border-3 border-white">
             <h3 className="text-xl font-bold">Barcelona</h3>
             <p className="mt-2 text-sm">Av. Diagonal, 08008 Barcelona, Spain</p>
           </div>
-          <div className="mb-6 sm:mb-0 bg-transparent text-white p-6 w-70 text-center border-3 border-white">
+          <div className="mb-5 sm:mb-0 bg-transparent text-white p-5 w-70 text-center border-3 border-white">
             <h3 className="text-xl font-bold">Tokyo</h3>
             <p className="mt-2 text-sm">
               1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japan
             </p>
           </div>
         </div>
-        <img className="-mt-2" src="scaled_map.svg" alt="Scaled Map" />
+        <img className="" src="scaled_map.svg" alt="Scaled Map" />
       </div>
       <div className="h-screen mb-0 bg-black-500 flex items-center justify-center">
         <motion.button
