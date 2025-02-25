@@ -1,6 +1,6 @@
-<svg id="dots" viewBox="0 0 10000 10000" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent"><g transform="scale(100)">
+<svg id="dots" viewBox="0 0 10000 10000" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent"><g transform="scale(80)">
 
-<g transform="translate(15, 5)">
+<g transform="translate(25, 5)">
   <rect x="4.34" y="-0.16" width="0.32" height="0.32" fill="#ffffff"/>
 <rect x="10.34" y="-0.16" width="0.32" height="0.32" fill="#ffffff"/>
 <rect x="11.34" y="-0.16" width="0.32" height="0.32" fill="#ffffff"/>
