@@ -129,11 +129,11 @@ function App() {
         </motion.h2>
       </div>
 
-      <div className=" h-screen w-screen bg-black-600">
-        <h2 className="mt-8 text-white text-2xl sm:text-4xl lg:text-6xl font-bold text-center">
+      <div className="h-screen w-screen bg-black-600">
+        <h2 className="mt-4 text-white text-2xl sm:text-3xl lg:text-6xl font-bold text-center">
           OUR LOCATIONS
         </h2>
-        <div className="mt-6 flex flex-col lg:flex-row justify-center gap-8 items-center">
+        <div className="mt-5 flex flex-col lg:flex-row justify-center gap-8 items-center">
           <div className="mb-5 sm:mb-0 bg-transparent text-white p-5 w-70 text-center border-3 border-white">
             <h3 className="text-xl font-bold">New York</h3>
             <p className="mt-2 text-sm">123 5th Ave, New York, NY 10010, USA</p>
@@ -149,8 +149,13 @@ function App() {
             </p>
           </div>
         </div>
-        <img className="" src="scaled_map.svg" alt="Scaled Map" />
+        <img
+          className="w-auto mx-auto overflow-hidden"
+          src="scaled_map.svg"
+          alt="Scaled Map"
+        />
       </div>
+      <div></div>
       <div className="h-screen mb-0 bg-black-500 flex items-center justify-center">
         <motion.button
           initial={{ opacity: 1 }}
