@@ -44,7 +44,7 @@ function App() {
 
   return (
     <>
-      <div className="h-screen bg-black-900 flex items-center justify-center">
+      <div className="overflow-hidden-y h-screen bg-black-900 flex items-center justify-center">
         <div className="box"></div>
         <TypingEffect />
       </div>
