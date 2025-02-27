@@ -22,33 +22,42 @@ const TypingEffect = () => {
 function App() {
   const handleScroll = (event) => {
     event.preventDefault();
-    const direction = event.deltaY > 0 ? 1 : -1;
-    const currentPage = Math.floor(window.scrollY / window.innerHeight);
-    const nextPage = direction > 0 ? currentPage + 1 : currentPage - 1;
+    const targetSections = document.querySelectorAll(".target-jump");
+    const scrollPositions = Array.from(targetSections).map(
+      (sec) => sec.offsetTop
+    );
 
-    const totalPages = 5;
-    if (nextPage >= 0 && nextPage < totalPages) {
-      window.scrollTo({
-        top: nextPage * window.innerHeight,
-        behavior: "smooth",
-      });
-    }
+    const currentScroll = window.scrollY;
+    let currentIndex = scrollPositions.findIndex(
+      (pos) => currentScroll < pos + 10
+    );
+
+    if (currentIndex === -1) currentIndex = scrollPositions.length - 1;
+
+    const direction = event.deltaY > 0 ? 1 : -1;
+    const nextIndex = Math.max(
+      0,
+      Math.min(scrollPositions.length - 1, currentIndex + direction)
+    );
+
+    window.scrollTo({
+      top: scrollPositions[nextIndex],
+      behavior: "smooth",
+    });
   };
 
   useEffect(() => {
     window.addEventListener("wheel", handleScroll, { passive: false });
-    return () => {
-      window.removeEventListener("wheel", handleScroll);
-    };
+    return () => window.removeEventListener("wheel", handleScroll);
   }, []);
 
   return (
     <>
-      <div className="overflow-hidden-y h-screen bg-black-900 flex items-center justify-center">
+      <div className="target-jump overflow-hidden-y h-screen bg-black-900 flex items-center justify-center">
         <div className="box"></div>
         <TypingEffect />
       </div>
-      <div className="h-screen bg-black-500 flex flex-col items-center justify-center">
+      <div className="target-jump h-screen bg-black-500 flex flex-col items-center justify-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: [1, 1, 1, 1, 1, 1, 1, 1, 1] }}
@@ -113,7 +122,7 @@ function App() {
           Thrive
         </motion.div>
       </div>
-      <div className="h-screen bg-black-500 flex items-center justify-center">
+      <div className="target-jump h-screen bg-black-500 flex items-center justify-center">
         <motion.h2
           initial={{ opacity: 0.3 }}
           animate={{ opacity: 1 }}
@@ -129,8 +138,8 @@ function App() {
         </motion.h2>
       </div>
 
-      <div className="h-screen w-screen bg-black-600">
-        <h2 className="mt-4 text-white text-2xl sm:text-3xl lg:text-6xl font-bold text-center">
+      <div className="target-jump h-screen w-screen bg-black-600">
+        <h2 className="mt-8 text-white text-2xl sm:text-3xl lg:text-6xl font-bold text-center">
           OUR LOCATIONS
         </h2>
         <div className="mt-5 flex flex-col lg:flex-row justify-center gap-8 items-center">
@@ -155,8 +164,7 @@ function App() {
           alt="Scaled Map"
         />
       </div>
-      <div></div>
-      <div className="h-screen mb-0 bg-black-500 flex items-center justify-center">
+      <div className="target-jump h-screen mb-0 bg-black-500 flex items-center justify-center">
         <motion.button
           initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
