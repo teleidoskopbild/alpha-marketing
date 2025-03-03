@@ -139,7 +139,7 @@ function App() {
       </div>
 
       <div className="target-jump h-screen w-screen bg-black-600">
-        <h2 className="mt-8 text-white text-2xl sm:text-3xl lg:text-6xl font-bold text-center">
+        <h2 className="mt-10 text-white text-2xl sm:text-3xl lg:text-6xl lg:mt-16 font-bold text-center">
           OUR LOCATIONS
         </h2>
         <div className="mt-5 flex flex-col lg:flex-row justify-center gap-8 items-center">
